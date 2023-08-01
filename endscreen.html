@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You did it!</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="endscreen" class="flex-center flex-column">
+        <h1>You did it!</h1>
+        <h2 id="finalScore"></h2>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Your name"
+          />
+          <button
+            class="btn"
+            type="submit"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Leave a mark on history
+          </button>
+        </form>
+        <a class="btn" href="/play.html">Play Again</a>
+        <a class="btn" href="/index.html">Return Home</a>
+      </div>
+    </div>
+    <script src="endscreen.js"></script>
+  </body>
+</html>

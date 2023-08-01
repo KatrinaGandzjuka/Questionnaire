@@ -1,0 +1,80 @@
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid #d59bf6;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+}
+
+.choice-letter {
+  padding: 1.5rem 2.5rem;
+  background-color: #d59bf6;
+  color: #f5f5f5;
+  border-radius: 1.9rem;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  color: #9896f1;
+  width: 100%;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 #8ef6e4;
+  border: 0.1rem solid #8ef6e4;
+  color: #8ef6e4;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-container:hover .choice-letter {
+  background-color: #8ef6e4;
+}
+
+.choice-container:hover .choice-text {
+  color: #8ef6e4;
+}
+
+.correct {
+  background-color: #5dc0a6;
+}
+
+.choice-container.correct .choice-text {
+  color: #f5f5f5;
+}
+
+.choice-container.correct .choice-letter {
+  background-color: #489581;
+}
+
+.incorrect {
+  background-color: #f6b8d1;
+}
+
+.choice-container.incorrect .choice-text {
+  color: #f5f5f5;
+}
+
+.choice-container.incorrect .choice-letter {
+  background-color: #b68699;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  font-size: 2rem;
+  color: #9896f1;
+  text-align: center;
+}
+
+.hud-main-text {
+  font-size: 6rem;
+  color: #d59bf6;
+  text-align: center;
+}
