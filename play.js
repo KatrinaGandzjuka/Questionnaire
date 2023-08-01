@@ -54,9 +54,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore", `${score}/${MAX_QUESTIONS}`);
-    return window.location.assign(
-      "https://katrinagandzjuka.github.io//endscreen.html"
-    );
+    return window.location.assign("/endscreen.html");
   }
   questionCounter++;
   progress.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
